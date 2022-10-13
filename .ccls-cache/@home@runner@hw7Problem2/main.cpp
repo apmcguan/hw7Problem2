@@ -6,13 +6,19 @@ void time(int hours, int min, int secs);
 
 
 int main() {
-int s;
+int hours, min, secs, secounds;
+  
+time ( hours, min, secs, secounds);
 
-cout<<" Enter the number of secounds that need to be converted :"<< endl;
-  cin>> s;
   
 }
-void time(int hours, int min, int secs)
+void time(int hours, int min, int secs, int secounds)
 {
+  cin>>secounds;
+  hours = (secounds/3600) % 60;
+  min = (secounds / 60) % 60;
+  secs = secounds % 60;
+
+  cout << hours<<min<<secs<<endl;
   
 }
