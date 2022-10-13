@@ -19,6 +19,6 @@ void time(int hours, int min, int secs, int secounds)
   min = (secounds / 60) % 60;
   secs = secounds % 60;
 
-  cout << hours<<min<<secs<<endl;
+  cout << hours<<"Hrs"<<min<<" mins "<<secs<<" secounds "<<endl;
   
 }
